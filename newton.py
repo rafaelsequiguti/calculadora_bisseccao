@@ -7,9 +7,7 @@ def derivada(x):
 	return 2*x + 1
 
 def newton(xo,limite):	
-
 	f = funcao(xo)
-	# x = xo - (funcao(xo)/derivada(xo))
 
 	f_aux = f
 	if(f_aux < 0): f_aux = f * - 1
