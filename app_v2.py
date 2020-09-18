@@ -96,11 +96,11 @@ class app():
         self.emp.grid(row=15, column = 0)
 
         # Entrada de dados 2
-        self.epslon = Label(self.frame, text = "Epslon = ")
-        self.epslon.grid(row=16, column = 0)
+        self.epslon2 = Label(self.frame, text = "Epslon = ")
+        self.epslon2.grid(row=16, column = 0)
 
-        self.epslon_entry = Entry(self.frame, font=fontStyle1)
-        self.epslon_entry.grid(row=16, column = 1)
+        self.epslon2_entry = Entry(self.frame, font=fontStyle1)
+        self.epslon2_entry.grid(row=16, column = 1)
 
         
         # Espaçamento
@@ -127,7 +127,7 @@ class app():
 
     def conta_newton(self):
         self.entry1 = float(self.chute.get())
-        self.entry2 = float(self.epslon_entry.get())
+        self.entry2 = float(self.epslon2_entry.get())
         self.result = float(newton.newton(self.entry1,self.entry2))
         self.newt["text"] = self.result
         
